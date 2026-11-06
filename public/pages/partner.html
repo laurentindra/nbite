@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="pagehead">
+    <div class="eyebrow">For local stores</div>
+    <h1>Food Partner portal</h1>
+    <p class="muted">Create an account for your store or log in to manage it.</p>
+  </div>
+  <div class="partner-auth-grid">
+    <section class="panel">
+      <h2><svg class="ic" aria-hidden="true"><use href="assets/img/icons.svg#store"/></svg>Partner log in</h2>
+      <p class="muted panel-lead">Already registered your store?</p>
+      <form data-form="partner-login" class="stack-form">
+        <label class="fld">Email<input class="inp" name="email" type="email" autocomplete="username" required></label>
+        <label class="fld">Password<input class="inp" name="password" type="password" autocomplete="current-password" required></label>
+        <div class="ferr on" role="alert" data-field="loginError"></div>
+        <button class="btn btn-p blk" type="submit">Log in to your store</button>
+      </form>
+    </section>
+    <section class="panel">
+      <h2><svg class="ic" aria-hidden="true"><use href="assets/img/icons.svg#edit"/></svg>Register your store</h2>
+      <p class="muted panel-lead">Create a new store profile and employee login.</p>
+      <form data-form="partner-register" class="stack-form">
+        <label class="fld">Employee full name<input class="inp" name="name" maxlength="60" required></label>
+        <label class="fld">Store name<input class="inp" name="storeName" maxlength="120" required></label>
+        <label class="fld">Store address<input class="inp" name="address" maxlength="255" required></label>
+        <label class="fld">Area / district<input class="inp" name="area" maxlength="120" placeholder="e.g. Beji, Depok" required></label>
+        <label class="fld">Work email<input class="inp" name="email" type="email" autocomplete="email" required></label>
+        <label class="fld">Password<input class="inp" name="password" type="password" minlength="8" autocomplete="new-password" required><span class="hint">At least 8 characters.</span></label>
+        <div class="ferr on" role="alert" data-field="registerError"></div>
+        <button class="btn btn-pe blk" type="submit">Create Food Partner account</button>
+      </form>
+    </section>
+  </div>
+</div>

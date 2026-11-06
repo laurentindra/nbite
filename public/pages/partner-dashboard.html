@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="pagehead partner-head">
+    <div>
+      <div class="eyebrow">Food Partner workspace</div>
+      <h1 data-field="title"></h1>
+      <p class="muted" data-field="subtitle"></p>
+    </div>
+    <div class="partner-head-actions">
+      <a class="btn btn-s" href="#partner-chats"><svg class="ic" aria-hidden="true"><use href="assets/img/icons.svg#message"/></svg><span data-field="messagesLabel">Customer messages</span></a>
+      <button class="btn btn-g" data-a="partner-logout">Log out</button>
+    </div>
+  </div>
+  <div class="partner-stats">
+    <div class="panel"><span class="eyebrow">Packages</span><strong data-field="packages"></strong><span class="muted">listed by your store</span></div>
+    <div class="panel"><span class="eyebrow">Promo prices</span><strong data-field="promos"></strong><span class="muted">currently discounted</span></div>
+    <div class="panel"><span class="eyebrow">Store stock</span><strong data-field="stock"></strong><span class="muted">packages remaining</span></div>
+  </div>
+  <div class="section dash-section">
+    <div class="sec-head">
+      <div><div class="eyebrow">Your listings</div><h2>Manage package prices</h2></div>
+    </div>
+    <p class="muted sec-note sec-note-lg">Your regular price is shown by default. Turn on a promo and enter the discounted price whenever your store decides to offer one. Updates appear in the customer catalogue immediately.</p>
+    <section class="panel dash-add">
+      <h2>Add a package</h2>
+      <form class="partner-price-form" data-form="partner-add-listing">
+        <label class="fld">Package name<input class="inp" name="title" maxlength="160" required></label>
+        <label class="fld">Category<input class="inp" name="category" maxlength="30" value="Other" required></label>
+        <label class="fld">Regular price (Rp)<input class="inp" type="number" name="price" min="100" required></label>
+        <label class="fld">Daily quantity<input class="inp" type="number" name="quantity" min="0" max="500" value="1" required></label>
+        <label class="fld">Pickup starts<input class="inp" type="time" name="pickupStart" value="18:00" required></label>
+        <label class="fld">Pickup ends<input class="inp" type="time" name="pickupEnd" value="21:00" required></label>
+        <label class="fld">Description<textarea class="inp" name="description" rows="2" maxlength="1000"></textarea></label>
+        <label class="fld photo-upload-field">Food photo (optional)<input class="inp" type="file" name="photo" accept="image/jpeg,image/png,image/webp"><span class="hint">JPG, PNG, or WEBP · max 4 MB</span><img class="photo-upload-preview" data-photo-preview alt="Selected food preview" hidden></label>
+        <button class="btn btn-p" type="submit">Add package</button>
+      </form>
+    </section>
+    <div class="partner-list" data-list="listings" data-if="has-listings"></div>
+    <div class="panel" data-if="no-listings">No packages are linked to this store yet.</div>
+  </div>
+</div>

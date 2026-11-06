@@ -1,0 +1,542 @@
+/* Page-specific layout. Everything that used to be an inline style="" attribute lives here. */
+[hidden] {
+  display:none!important;
+}
+.text-navy {
+  color:var(--navy);
+}
+/* shell */
+.lockup-footer {
+  color:var(--ivory);
+}
+.footer-tagline {
+  margin-top:12px;
+  max-width:34ch;
+}
+.site-f a.fl {
+  display:block;
+  padding:4px 0;
+}
+/* home */
+.star-1 {
+  top:12%;
+  left:14%;
+}
+.star-2 {
+  top:26%;
+  right:8%;
+  width:4px;
+  height:4px;
+}
+.star-3 {
+  bottom:16%;
+  left:6%;
+  width:4px;
+  height:4px;
+}
+.star-4 {
+  bottom:24%;
+  right:16%;
+}
+.heroart-moon {
+  position:relative;
+}
+.home-cats {
+  padding-top:28px;
+}
+.sec-note {
+  margin:-8px 0 16px;
+}
+.banner-copy {
+  display:flex;
+  gap:20px;
+  align-items:center;
+}
+/* cards */
+.fc-pickup {
+  margin-top:10px;
+}
+.rowc .ti {
+  font-size:16px;
+}
+.rowc .pricerow {
+  margin-top:4px;
+}
+.rowc .price {
+  font-size:19px;
+}
+.rowc .bdg {
+  height:22px;
+  margin-left:auto;
+}
+.mr.rowc-meta {
+  margin-top:auto;
+  font-size:12.5px;
+  gap:12px;
+}
+.rowc-time {
+  display:flex;
+  gap:4px;
+  align-items:center;
+}
+.center-actions {
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  justify-content:center;
+  margin-top:14px;
+}
+/* explore */
+.xcats {
+  margin-top:14px;
+}
+.fp-reset {
+  font-size:13.5px;
+}
+.resbar-count {
+  color:var(--navy);
+  font-size:17px;
+}
+.results-unavailable {
+  margin:26px 0 12px;
+}
+.map-you {
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:16px;
+  height:16px;
+  border-radius:50%;
+  background:#4A5AA6;
+  border:3px solid #fff;
+  box-shadow:0 0 0 8px rgba(74,90,166,.25);
+  translate:-50% -50%;
+}
+.pin {
+  left:calc(var(--x)*1%);
+  top:calc(var(--y)*1%);
+}
+/* deal */
+.dhero .disc {
+  left:18px;
+  top:18px;
+  height:30px;
+  font-size:14px;
+}
+.info .info-address {
+  margin-top:6px;
+}
+.buy-top {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+}
+.mr.buy-store {
+  font-size:14px;
+  font-weight:700;
+}
+.buy .favb {
+  position:static;
+}
+.buy h1 {
+  font-size:28px;
+  font-weight:800;
+  letter-spacing:-.03em;
+  color:var(--navy);
+  line-height:1.15;
+  margin-top:6px;
+}
+.buy-place {
+  display:flex;
+  gap:6px;
+  align-items:center;
+  margin-top:6px;
+  font-size:14px;
+  font-weight:600;
+}
+.buy .pricerow {
+  margin-top:16px;
+}
+.buy .price {
+  font-size:36px;
+}
+.buy .was {
+  font-size:17px;
+}
+.buy-save {
+  margin-left:auto;
+  font-weight:700;
+  font-size:13px;
+  color:var(--ok-ink);
+  background:var(--ok-bg);
+  padding:4px 10px;
+  border-radius:999px;
+}
+.buy .chat-btn {
+  margin-top:16px;
+}
+.deadline-title {
+  font-weight:800;
+}
+.deadline-note {
+  font-size:13px;
+  color:var(--lav);
+}
+.qty-row {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-top:18px;
+}
+.qty-label {
+  font-weight:800;
+  color:var(--navy);
+}
+.qty-avail {
+  font-size:13px;
+  font-weight:600;
+}
+.buy .sumrow.tot {
+  margin-top:18px;
+}
+.buy .buy-reserve {
+  margin-top:6px;
+}
+.buy p.buy-hint {
+  text-align:center;
+  margin-top:8px;
+}
+.buy .buy-unavailable {
+  margin-top:18px;
+}
+.buy .buy-similar {
+  margin-top:10px;
+}
+/* checkout */
+.checkout-title {
+  font-size:clamp(26px,3vw,34px);
+  font-weight:800;
+  letter-spacing:-.03em;
+  color:var(--navy);
+  margin-bottom:20px;
+}
+.opt-body {
+  flex:1;
+}
+.opt-note {
+  font-size:13px;
+}
+.opt[disabled] {
+  opacity:.55;
+  cursor:not-allowed;
+}
+.opt.opt-terms {
+  align-items:flex-start;
+  margin-bottom:0;
+}
+.opt-terms .radio {
+  border-radius:6px;
+  margin-top:2px;
+}
+.opt-terms[aria-checked=true] .radio {
+  background:var(--navy);
+  border-color:var(--navy);
+}
+.opt-terms .radio svg.ic {
+  color:#fff;
+  stroke-width:3;
+}
+.opt-terms-text {
+  font-size:14px;
+  color:#454B5E;
+}
+.sum-item {
+  display:flex;
+  gap:14px;
+  align-items:center;
+  margin-bottom:12px;
+}
+.sum-thumb {
+  width:84px;
+  height:84px;
+  border-radius:14px;
+  overflow:hidden;
+  flex:none;
+}
+.sum-info {
+  flex:1;
+  min-width:0;
+}
+.sum-merchant {
+  font-size:13px;
+  font-weight:600;
+}
+.sum-title {
+  font-weight:800;
+  color:var(--navy);
+}
+.stepper.sum-stepper {
+  height:38px;
+  margin-top:6px;
+}
+.sum-stepper button {
+  width:36px;
+  height:36px;
+}
+.sum-hint {
+  margin:6px 0 14px;
+}
+/* tickets, success, orders */
+.celebrate p {
+  color:var(--lav);
+  margin-top:4px;
+}
+.narrow.narrow-top {
+  margin-top:28px;
+}
+.success-actions {
+  display:grid;
+  gap:10px;
+  margin-top:20px;
+}
+.ticket-head {
+  padding:18px 20px 14px;
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
+.ticket-ref {
+  flex:1;
+  min-width:0;
+}
+.ticket-label {
+  font-size:12.5px;
+  font-weight:600;
+}
+.ticket-ref-value {
+  font-weight:800;
+  font-size:17px;
+  color:var(--navy);
+  letter-spacing:.02em;
+  overflow-wrap:anywhere;
+}
+.ticket-qr {
+  border-top:2px dashed var(--border);
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:10px;
+}
+.qr-box {
+  background:#fff;
+  padding:10px;
+  border-radius:14px;
+  border:1px solid var(--border);
+}
+.qr-text {
+  text-align:center;
+}
+.qr-caption {
+  font-size:12px;
+  font-weight:600;
+}
+.qr-code {
+  font-weight:800;
+  font-size:38px;
+  letter-spacing:.2em;
+  color:var(--navy);
+  font-variant-numeric:tabular-nums;
+  margin-left:.2em;
+}
+.ticket-details {
+  border-top:2px dashed var(--border);
+  padding:18px 20px;
+  display:grid;
+  gap:12px;
+  font-size:14.5px;
+}
+.ticket-row {
+  display:flex;
+  gap:10px;
+}
+.ticket-row b {
+  color:var(--navy);
+}
+.seg.seg-tabs {
+  margin:14px 0 22px;
+}
+.ocard-main {
+  display:flex;
+  gap:14px;
+}
+.ocard-thumb {
+  width:84px;
+  height:84px;
+  border-radius:14px;
+  overflow:hidden;
+  flex:none;
+}
+.ocard-info {
+  flex:1;
+  min-width:0;
+}
+.ocard-top {
+  display:flex;
+  justify-content:space-between;
+  gap:8px;
+  align-items:flex-start;
+  flex-wrap:wrap;
+}
+.ocard-merchant {
+  font-size:13px;
+  font-weight:600;
+}
+.ocard-title {
+  font-weight:800;
+  color:var(--navy);
+  font-size:17px;
+}
+.ocard-total {
+  font-weight:800;
+  margin-top:2px;
+}
+.ocard-foot {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-top:14px;
+  gap:10px;
+  flex-wrap:wrap;
+}
+.order-title {
+  font-size:30px;
+  font-weight:800;
+  letter-spacing:-.03em;
+  color:var(--navy);
+  margin-bottom:16px;
+}
+.btn.order-cancel {
+  margin-top:16px;
+}
+.hint.order-hint {
+  text-align:center;
+}
+.order-hint-tight {
+  margin-top:8px;
+}
+.order-hint-loose {
+  margin-top:16px;
+}
+/* profile */
+.panel.profile-card {
+  text-align:center;
+  padding:28px 22px;
+}
+.profile-avatar {
+  width:84px;
+  height:84px;
+  border-radius:50%;
+  background:var(--navy);
+  color:var(--ivory);
+  display:grid;
+  place-items:center;
+  font-weight:800;
+  font-size:30px;
+  margin:0 auto 12px;
+}
+.profile-name {
+  font-weight:800;
+  font-size:20px;
+  color:var(--navy);
+}
+.profile-stats {
+  display:flex;
+  gap:10px;
+  margin-top:20px;
+}
+.profile-stat {
+  flex:1;
+  background:var(--sand);
+  border-radius:14px;
+  padding:12px;
+}
+.profile-stat .price {
+  font-size:22px;
+}
+.profile-stat .price.profile-stat-money {
+  font-size:19px;
+}
+.profile-stat-label {
+  font-size:12px;
+  font-weight:600;
+}
+.panel.menu-flush {
+  padding:0;
+  overflow:hidden;
+}
+.mi-icon {
+  color:var(--navy);
+}
+.mi-label {
+  flex:1;
+}
+.mi.mi-logout {
+  color:var(--err-ink);
+}
+/* partner portal */
+.panel-lead {
+  margin-bottom:16px;
+}
+.dash-section {
+  padding-top:22px;
+}
+.sec-note.sec-note-lg {
+  margin:-8px 0 18px;
+}
+.panel.dash-add {
+  margin-bottom:18px;
+}
+.state-page {
+  padding-block:40px;
+}
+/* auth */
+.auth-head {
+  text-align:center;
+}
+.authbox p.auth-switch {
+  text-align:center;
+  margin-top:18px;
+}
+/* overlays */
+.modal-center {
+  text-align:center;
+}
+.modal-title-gap {
+  margin-top:8px;
+}
+.modal-lead {
+  margin-bottom:18px;
+}
+.modal-actions {
+  display:grid;
+  gap:10px;
+}
+.fav-thumb {
+  width:46px;
+  height:46px;
+  border-radius:10px;
+  overflow:hidden;
+  flex:none;
+}
+.drawer-apply {
+  margin-top:16px;
+}
+.cele-arm {
+  stroke: var(--line);
+}
+.cele-hand {
+  fill: var(--moon);
+  stroke: var(--line);
+}

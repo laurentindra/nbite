@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Night Bite · Customer</title>
+  <meta name="description" content="Night Bite helps you rescue good surplus food from local bakeries, cafes and food stalls at lower prices.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
+  <link rel="apple-touch-icon" href="assets/img/logo.png">
+</head>
+<body data-app="customer">
+<header class="site-h">
+  <div class="container hrow">
+    <a class="lockup" href="#home" aria-label="Night Bite home">
+      <svg width="38" height="38" viewBox="0 0 120 120" role="img" aria-label="Night Bite moon mascot"><use href="assets/img/mascot.svg#m-body"/><use href="assets/img/mascot.svg#f-calm"/></svg>
+      <span>night bite</span>
+    </a>
+    <nav class="mnav" aria-label="Main">
+      <a href="#home" data-nav="home">Home</a>
+      <a href="#explore" data-nav="explore">Explore</a>
+      <a href="#orders" data-nav="orders">My Orders</a>
+      <a href="#messages" data-nav="messages">Messages</a>
+      <a href="#profile" data-nav="profile">Profile</a>
+    </nav>
+    <div class="hright">
+      <button class="locbtn" data-a="modal" data-k="locs" aria-label="Change location">
+        <svg class="ic" aria-hidden="true"><use href="assets/img/icons.svg#pin"/></svg>
+        <span>Margonda, Depok</span>
+      </button>
+      <a class="partner" href="#partner-dashboard" data-show="partner">Store dashboard</a>
+      <button class="partner" data-a="partner" data-show="no-partner">Food partner?</button>
+      <a class="btn btn-g hlogin" href="#partner-chats" data-show="partner-only">Inbox</a>
+      <button class="btn btn-pe sm" data-a="partner-logout" data-show="partner-only">Log out</button>
+      <button class="iconbtn" data-a="toast" data-m="No new notifications" aria-label="Notifications" data-show="user">
+        <svg class="ic" aria-hidden="true"><use href="assets/img/icons.svg#bell"/></svg>
+      </button>
+      <a class="avatar" href="#profile" data-show="user" data-field="avatar"></a>
+      <a class="btn btn-g hlogin" href="#login" data-show="guest">Log in</a>
+      <a class="btn btn-pe sm" href="#register" data-show="guest">Sign up</a>
+    </div>
+  </div>
+</header>
+
+<main id="main"></main>
+
+<footer class="site-f">
+  <div class="container">
+    <div class="fgrid">
+      <div>
+        <div class="lockup lockup-footer">
+          <svg width="38" height="38" viewBox="0 0 120 120" role="img" aria-label="Night Bite moon mascot"><use href="assets/img/mascot.svg#m-body"/><use href="assets/img/mascot.svg#f-calm"/></svg>
+          <span>night bite</span>
+        </div>
+        <p class="footer-tagline">Good Food. Second Chances.<br>A little less waste, a lot more taste.</p>
+      </div>
+      <div>
+        <h4>Discover</h4>
+        <a class="fl" href="#explore">Explore deals</a>
+        <a class="fl" href="#orders">My orders</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a class="fl" href="#partner">Food Partner portal</a>
+        <button class="fl" data-a="toast" data-m="Help center is coming soon">Help center</button>
+      </div>
+    </div>
+    <p class="fnote">Night Bite is in early development. The merchants and deals shown are sample listings. Pay at pickup is the only payment method for now.</p>
+  </div>
+</footer>
+
+<nav class="tabbar" aria-label="Main">
+  <a href="#home" data-nav="home"><svg class="ic" aria-hidden="true"><use href="assets/img/icons.svg#home"/></svg>Home</a>
+  <a href="#explore" data-nav="explore"><svg class="ic" aria-hidden="true"><use href="assets/img/icons.svg#search"/></svg>Explore</a>
+  <a href="#orders" data-nav="orders"><svg class="ic" aria-hidden="true"><use href="assets/img/icons.svg#bag"/></svg>Orders</a>
+  <a href="#messages" data-nav="messages"><svg class="ic" aria-hidden="true"><use href="assets/img/icons.svg#message"/></svg>Messages</a>
+  <a href="#profile" data-nav="profile"><svg class="ic" aria-hidden="true"><use href="assets/img/icons.svg#user"/></svg>Profile</a>
+</nav>
+
+<div id="overlay-root"></div>
+
+<!-- Widget Chatbox AI -->
+<div class="ai-chatbot-container">
+  <button class="ai-fab-btn" id="aiChatOpen" type="button" aria-label="Tanya AI Assistant">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+    <span>Tanya AI</span>
+  </button>
+
+  <div class="ai-chat-window hidden" id="aiChatWindow">
+    <div class="ai-chat-header">
+      <div class="ai-chat-title">
+        <strong>Asisten Night Bite</strong>
+        <span class="ai-status">Online</span>
+      </div>
+      <button class="ai-close-btn" id="aiChatClose" type="button" aria-label="Tutup">×</button>
+    </div>
+
+    <div class="ai-chat-body" id="aiChatBody">
+      <div class="ai-msg bot">Halo! Ada yang bisa kubantu seputar makanan surplus atau rekomendasi menu malam ini? 😊</div>
+    </div>
+
+    <form class="ai-chat-footer" id="aiChatForm" autocomplete="off">
+      <input type="text" name="message" placeholder="Ketik pesan atau tanyakan makanan..." maxlength="1000" required />
+      <button type="submit">Kirim</button>
+    </form>
+  </div>
+</div>
+
+<script type="module" src="assets/js/main.js"></script>
+<script type="module" src="assets/js/ai-chat.js"></script>
+</body>
+</html>

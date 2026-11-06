@@ -1,0 +1,37 @@
+<div class="fp-h"><h2>Filters</h2><button class="linkb fp-reset" data-a="reset">Reset all</button></div>
+<fieldset>
+  <legend>Sort by</legend>
+  <div role="radiogroup" aria-label="Sort by">
+    <button class="optline" role="radio" aria-checked="false" data-a="sort" data-s="Nearest"><span class="radio"></span>Nearest</button>
+    <button class="optline" role="radio" aria-checked="false" data-a="sort" data-s="Lowest Price"><span class="radio"></span>Lowest Price</button>
+    <button class="optline" role="radio" aria-checked="false" data-a="sort" data-s="Biggest Discount"><span class="radio"></span>Biggest Discount</button>
+    <button class="optline" role="radio" aria-checked="false" data-a="sort" data-s="Pickup Time"><span class="radio"></span>Pickup Time</button>
+  </div>
+</fieldset>
+<fieldset>
+  <legend>Maximum price</legend>
+  <div class="chips">
+    <button class="chip sm" aria-pressed="false" data-a="setf" data-k="max" data-v="0">Any</button>
+    <button class="chip sm" aria-pressed="false" data-a="setf" data-k="max" data-v="15000">Rp15.000</button>
+    <button class="chip sm" aria-pressed="false" data-a="setf" data-k="max" data-v="20000">Rp20.000</button>
+    <button class="chip sm" aria-pressed="false" data-a="setf" data-k="max" data-v="25000">Rp25.000</button>
+  </div>
+</fieldset>
+<fieldset>
+  <legend>Distance</legend>
+  <div class="chips">
+    <button class="chip sm" aria-pressed="false" data-a="setf" data-k="dist" data-v="0">Any</button>
+    <button class="chip sm" aria-pressed="false" data-a="setf" data-k="dist" data-v="1">1 km</button>
+    <button class="chip sm" aria-pressed="false" data-a="setf" data-k="dist" data-v="2">2 km</button>
+    <button class="chip sm" aria-pressed="false" data-a="setf" data-k="dist" data-v="5">5 km</button>
+  </div>
+</fieldset>
+<fieldset>
+  <legend>Pickup time</legend>
+  <div class="chips">
+    <button class="chip sm" aria-pressed="false" data-a="setf" data-k="time" data-v="">Any</button>
+    <button class="chip sm" aria-pressed="false" data-a="setf" data-k="time" data-v="early">Before 19:00</button>
+    <button class="chip sm" aria-pressed="false" data-a="setf" data-k="time" data-v="late">19:00 or later</button>
+    <button class="chip sm" aria-pressed="false" data-a="setf" data-k="time" data-v="after20">Ends after 20:00</button>
+  </div>
+</fieldset>

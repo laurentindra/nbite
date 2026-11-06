@@ -1,0 +1,84 @@
+<section class="hero">
+  <div class="container herogrid">
+    <div>
+      <div class="greet">Hello, <span data-field="name">guest</span></div>
+      <h1>What will you discover today?</h1>
+      <p class="lede">Discover delicious food from local spots, with prices and pickup details set by each store.</p>
+      <form class="hsearch" data-form="hsearch" role="search">
+        <label class="bigsearch"><svg class="ic" aria-hidden="true"><use href="../assets/img/icons.svg#search"/></svg><input id="hq" placeholder="Find your next bite..." aria-label="Search deals" autocomplete="off"></label>
+        <button class="btn btn-pe" type="submit">Search</button>
+      </form>
+      <p class="guestnote" data-if="guest">New to Night Bite? <a href="#register">Create a free account</a> to reserve bags, or <a href="#login">log in</a>.</p>
+      <div class="perks">
+        <span><svg class="ic" aria-hidden="true"><use href="../assets/img/icons.svg#bag"/></svg>Save on good food</span>
+        <span><svg class="ic" aria-hidden="true"><use href="../assets/img/icons.svg#store"/></svg>Discover local favorites</span>
+        <span><svg class="ic" aria-hidden="true"><use href="../assets/img/icons.svg#leaf"/></svg>Help reduce food waste</span>
+      </div>
+    </div>
+    <div class="heroart">
+      <div class="halo"></div>
+      <div class="stars"><span class="star-1"></span><span class="star-2"></span><span class="star-3"></span><span class="star-4"></span></div>
+      <div class="heroart-moon"><svg width="250" height="250" viewBox="0 0 120 120" role="img" aria-label="Night Bite moon mascot"><use href="../assets/img/mascot.svg#m-body"/><use href="../assets/img/mascot.svg#f-calm"/></svg></div>
+    </div>
+  </div>
+</section>
+<div class="container">
+  <div class="section home-cats">
+    <div class="chips" role="group" aria-label="Categories">
+      <button class="chip" aria-pressed="false" data-a="cat" data-c="All">All</button>
+      <button class="chip" aria-pressed="false" data-a="cat" data-c="Bakery">Bakery</button>
+      <button class="chip" aria-pressed="false" data-a="cat" data-c="Meals">Meals</button>
+      <button class="chip" aria-pressed="false" data-a="cat" data-c="Snacks">Snacks</button>
+      <button class="chip" aria-pressed="false" data-a="cat" data-c="Café">Café</button>
+    </div>
+  </div>
+  <div class="section" data-if="best">
+    <div class="sec-head">
+      <div><div class="eyebrow">Available for pickup</div><h2>Popular packages</h2></div>
+      <a class="linkb" href="#explore">See all</a>
+    </div>
+    <div class="grid" data-list="best"></div>
+  </div>
+  <div class="section" data-if="soon">
+    <div class="sec-head">
+      <div><div class="eyebrow">Pickup ends within 100 minutes</div><h2>Closing Soon</h2></div>
+    </div>
+    <div class="grid" data-list="soon"></div>
+  </div>
+  <div class="section" data-if="all">
+    <div class="sec-head">
+      <div><div class="eyebrow">Browse anytime</div><h2>Food spots &amp; packages</h2></div>
+      <a class="linkb" href="#explore">Explore all</a>
+    </div>
+    <p class="muted sec-note">Stores stay visible throughout the day. Each package shows its current price, stock and pickup window.</p>
+    <div class="grid two" data-list="all"></div>
+  </div>
+  <div class="section" data-if="none" data-list="empty"></div>
+  <div class="section">
+    <div class="sec-head"><h2>How Night Bite works</h2></div>
+    <div class="how">
+      <div class="hcard">
+        <div class="ico"><svg class="ic" aria-hidden="true"><use href="../assets/img/icons.svg#search"/></svg></div>
+        <h3>Find a deal</h3>
+        <p>Browse surplus packages from bakeries, cafés and food stalls near you.</p>
+      </div>
+      <div class="hcard">
+        <div class="ico"><svg class="ic" aria-hidden="true"><use href="../assets/img/icons.svg#bag"/></svg></div>
+        <h3>Reserve a bag</h3>
+        <p>Choose a package and a pickup window. Pay the store directly when you collect it.</p>
+      </div>
+      <div class="hcard">
+        <div class="ico"><svg class="ic" aria-hidden="true"><use href="../assets/img/icons.svg#store"/></svg></div>
+        <h3>Pick it up</h3>
+        <p>Show your code at the counter before the window closes and enjoy it tonight.</p>
+      </div>
+    </div>
+  </div>
+  <div class="banner">
+    <div class="banner-copy">
+      <svg width="84" height="84" viewBox="0 0 120 120" role="img" aria-label="Night Bite moon mascot"><use href="../assets/img/mascot.svg#m-body"/><use href="../assets/img/mascot.svg#f-calm"/></svg>
+      <h2>A little less waste, a lot more taste.</h2>
+    </div>
+    <a class="btn btn-pe" href="#explore">Explore packages</a>
+  </div>
+</div>

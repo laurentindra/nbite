@@ -1,0 +1,182 @@
+/* Night Bite stylesheet entry point. Order matters: it is the original cascade order. */
+@import url("base.css");
+@import url("header.css");
+@import url("hero.css");
+@import url("sections.css");
+@import url("cards.css");
+@import url("art.css");
+@import url("buttons.css");
+@import url("explore.css");
+@import url("detail.css");
+@import url("checkout.css");
+@import url("overlays.css");
+@import url("footer.css");
+@import url("auth.css");
+@import url("partner.css");
+@import url("views.css");
+@import url("chatbox.css");
+/* Night Bite AI chatbox. Tema: navy gelap, krem, dan aksen oranye-peach seperti tombol Search. */
+.ai-chatbot-container {
+  /* Ubah warna chatbox cukup lewat variabel ini */
+  --cb-navy: #111c3a;
+  --cb-navy-soft: #1b2a52;
+  --cb-cream: #f7f1e6;
+  --cb-paper: #fffdf8;
+  --cb-peach: #eba56b;
+  --cb-peach-hover: #e49757;
+  --cb-line: #e7dfd0;
+  --cb-ink: #17203d;
+  --cb-muted: #b9c2df;
+
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 9999;
+  font-family: inherit;
+  color: var(--cb-ink);
+}
+.ai-chatbot-container button,
+.ai-chatbot-container input { font-family: inherit; }
+
+/* Tombol melayang */
+.ai-fab-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 22px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--cb-peach);
+  color: var(--cb-navy);
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 10px 28px rgba(17, 28, 58, 0.28);
+  transition: transform .18s ease, background-color .18s ease, box-shadow .18s ease;
+}
+.ai-fab-btn:hover { background: var(--cb-peach-hover); transform: translateY(-2px); box-shadow: 0 14px 32px rgba(17, 28, 58, 0.34); }
+.ai-fab-btn:focus-visible,
+.ai-close-btn:focus-visible,
+.ai-chat-footer button:focus-visible { outline: 3px solid rgba(235, 165, 107, 0.55); outline-offset: 2px; }
+
+/* Jendela chat */
+.ai-chat-window {
+  position: absolute;
+  right: 0;
+  bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  height: min(540px, calc(100vh - 130px));
+  overflow: hidden;
+  background: var(--cb-paper);
+  border: 1px solid var(--cb-line);
+  border-radius: 22px;
+  box-shadow: 0 24px 60px rgba(17, 28, 58, 0.32);
+}
+.ai-chat-window.hidden { display: none; }
+
+/* Header */
+.ai-chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 18px;
+  background: var(--cb-navy);
+  color: var(--cb-cream);
+}
+.ai-chat-title { display: flex; flex-direction: column; gap: 3px; font-size: 16px; }
+.ai-chat-title strong { font-weight: 800; letter-spacing: 0.1px; }
+.ai-status { display: flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; color: var(--cb-muted); }
+.ai-status::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: #5fd68f; box-shadow: 0 0 0 3px rgba(95, 214, 143, 0.22); }
+.ai-close-btn {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--cb-cream);
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color .15s ease;
+}
+.ai-close-btn:hover { background: rgba(255, 255, 255, 0.14); }
+
+/* Area pesan */
+.ai-chat-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  overflow-y: auto;
+  background: var(--cb-cream);
+  font-size: 14px;
+  scrollbar-width: thin;
+  scrollbar-color: #d8cdb8 transparent;
+}
+.ai-msg {
+  max-width: 85%;
+  padding: 10px 14px;
+  line-height: 1.5;
+  word-break: break-word;
+}
+.ai-msg.bot {
+  align-self: flex-start;
+  background: #fff;
+  color: var(--cb-ink);
+  border: 1px solid var(--cb-line);
+  border-radius: 16px 16px 16px 4px;
+}
+.ai-msg.user {
+  align-self: flex-end;
+  background: var(--cb-navy);
+  color: var(--cb-cream);
+  border-radius: 16px 16px 4px 16px;
+}
+
+/* Kolom input */
+.ai-chat-footer {
+  display: flex;
+  gap: 8px;
+  padding: 12px;
+  background: var(--cb-paper);
+  border-top: 1px solid var(--cb-line);
+}
+.ai-chat-footer input {
+  flex: 1;
+  min-width: 0;
+  padding: 11px 16px;
+  background: #fff;
+  color: var(--cb-ink);
+  border: 1px solid var(--cb-line);
+  border-radius: 999px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color .15s ease, box-shadow .15s ease;
+}
+.ai-chat-footer input::placeholder { color: #8a90a8; }
+.ai-chat-footer input:focus { border-color: var(--cb-peach); box-shadow: 0 0 0 3px rgba(235, 165, 107, 0.25); }
+.ai-chat-footer button {
+  padding: 0 20px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--cb-peach);
+  color: var(--cb-navy);
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background-color .15s ease;
+}
+.ai-chat-footer button:hover { background: var(--cb-peach-hover); }
+
+/* HP: naikkan tombol supaya tidak menutupi tab bar bawah */
+@media (max-width: 760px) {
+  .ai-chatbot-container { right: 16px; bottom: calc(84px + env(safe-area-inset-bottom, 0px)); }
+  .ai-chat-window { width: min(370px, calc(100vw - 32px)); height: min(70vh, 520px); }
+  .ai-fab-btn { padding: 12px 18px; }
+}

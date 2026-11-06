@@ -1,0 +1,27 @@
+<div class="ai-chatbot-container">
+  <!-- Tombol Melayang (Floating Button) untuk Membuka Chat -->
+  <button class="ai-fab-btn" data-a="toggle-ai-chat" aria-label="Tanya AI Assistant">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+    <span>Tanya AI</span>
+  </button>
+
+  <!-- Kotak Jendela Chat (Hidden secara default) -->
+  <div class="ai-chat-window hidden" id="aiChatWindow">
+    <div class="ai-chat-header">
+      <div class="ai-chat-title">
+        <strong>Asisten Night Bite</strong>
+        <span class="ai-status">Online</span>
+      </div>
+      <button class="ai-close-btn" data-a="toggle-ai-chat">×</button>
+    </div>
+    
+    <div class="ai-chat-body" data-slot="ai-messages">
+      <div class="ai-msg bot">Halo! Ada yang bisa kubantu seputar makanan surplus atau rekomendasi menu malam ini? 😊</div>
+    </div>
+
+    <form class="ai-chat-footer" data-form="ai-chat-send">
+      <input type="text" name="message" placeholder="Ketik pesan atau tanyakan makanan..." autocomplete="off" required />
+      <button type="submit">Kirim</button>
+    </form>
+  </div>
+</div>

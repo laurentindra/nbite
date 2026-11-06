@@ -1,0 +1,57 @@
+<div class="container">
+  <button class="crumb" data-a="back"><svg class="ic" aria-hidden="true"><use href="assets/img/icons.svg#left"/></svg>Back</button>
+  <h1 class="checkout-title">Checkout</h1>
+  <div class="cgrid">
+    <div>
+      <div class="panel">
+        <h2><svg class="ic" aria-hidden="true"><use href="assets/img/icons.svg#clock"/></svg>Pickup</h2>
+        <p><b class="text-navy">Today, <span data-field="window"></span></b><br><span class="muted" data-field="where"></span></p>
+      </div>
+      <div class="panel">
+        <h2><svg class="ic" aria-hidden="true"><use href="assets/img/icons.svg#bag"/></svg>Payment method</h2>
+        <button class="opt" role="radio" aria-checked="false" data-a="pay" data-k="cash">
+          <span class="radio"></span>
+          <span class="opt-body"><b class="text-navy">Pay at pickup</b><br><span class="muted opt-note">Pay the store directly when you collect your package.</span></span>
+        </button>
+        <button class="opt" role="radio" aria-checked="false" disabled data-a="pay" data-k="qris">
+          <span class="radio"></span>
+          <span class="opt-body"><b class="text-navy">QRIS online payment</b><br><span class="muted opt-note">Requires a verified payment-gateway account and API credentials.</span></span>
+          <span class="bdg b-lav">Coming soon</span>
+        </button>
+      </div>
+      <div class="panel">
+        <h2><svg class="ic" aria-hidden="true"><use href="assets/img/icons.svg#shield"/></svg>Terms &amp; cancellation</h2>
+        <button class="opt opt-terms" role="checkbox" aria-checked="true" data-a="agree">
+          <span class="radio"><svg class="ic s14" aria-hidden="true"><use href="assets/img/icons.svg#check"/></svg></span>
+          <span class="opt-terms-text">I agree to the terms. Free cancellation until 1 hour before pickup starts. Packages not collected in the pickup window are not refunded.</span>
+        </button>
+      </div>
+    </div>
+    <aside class="sticky">
+      <div class="panel">
+        <h2>Order summary</h2>
+        <div class="sum-item">
+          <div class="sum-thumb"><div class="art-box" data-art role="img" aria-label="Illustration placeholder for food photo"><img alt=""></div></div>
+          <div class="sum-info">
+            <div class="muted sum-merchant" data-field="merchant"></div>
+            <div class="sum-title" data-field="title"></div>
+            <div class="stepper sum-stepper">
+              <button data-a="q-" aria-label="Decrease quantity"><svg class="ic" aria-hidden="true"><use href="assets/img/icons.svg#minus"/></svg></button>
+              <b data-field="qty"></b>
+              <button data-a="q+" aria-label="Increase quantity"><svg class="ic" aria-hidden="true"><use href="assets/img/icons.svg#plus"/></svg></button>
+            </div>
+          </div>
+        </div>
+        <div class="sumrow"><span data-field="line"></span><span data-field="subtotal"></span></div>
+        <div class="sumrow"><span>Service fee</span><span data-field="fee"></span></div>
+        <div class="sumrow tot"><span>Total payment</span><span data-field="total"></span></div>
+        <div class="hint sum-hint" data-field="savings"></div>
+        <button class="btn btn-p blk" data-a="confirm">
+          <span class="spin" data-if="busy"></span>
+          <span data-if="busy">Confirming</span>
+          <span data-if="idle" data-field="confirmLabel"></span>
+        </button>
+      </div>
+    </aside>
+  </div>
+</div>

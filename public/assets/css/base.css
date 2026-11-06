@@ -1,0 +1,127 @@
+/* Night Bite website styles. Navy brand header and hero, cream marketplace pages, peach reserved for discounts. */
+:root {
+  --navy:#101A35;
+  --twi:#1D2B4D;
+  --ivory:#F7F0DD;
+  --lav:#C6CBE4;
+  --cream:#FAF8F2;
+  --peach:#E9A66F;
+  --text:#22283A;
+  --text2:#6D7283;
+  --border:#E7E4DD;
+  --ok:#3D795A;
+  --warn:#C78339;
+  --err:#B94B55;
+  --white:#FFFFFF;
+  --ok-ink:#2B5C42;
+  --ok-bg:#E4F0E9;
+  --warn-ink:#80500F;
+  --warn-bg:#FBEBD6;
+  --err-ink:#8E323D;
+  --err-bg:#F7E3E5;
+  --lav-bg:#E9EBF5;
+  --peach-bg:#FBEADA;
+  --sand:#F3F0E8;
+  --focus:#4A5AA6;
+  --moon:#F7F0DD;
+  --line:#101A35;
+  --font:Manrope,system-ui,-apple-system,"Segoe UI",sans-serif;
+  color-scheme:light;
+}
+* {
+  box-sizing:border-box;
+}
+html {
+  scroll-behavior:smooth;
+}
+body {
+  margin:0;
+  background:var(--cream);
+  color:var(--text);
+  font:500 15px/1.5 var(--font);
+  -webkit-font-smoothing:antialiased;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin:0;
+}
+ul {
+  padding:0;
+  list-style:none;
+}
+a {
+  color:inherit;
+  text-decoration:none;
+}
+button {
+  font:inherit;
+  color:inherit;
+  cursor:pointer;
+  border:0;
+  background:none;
+  padding:0;
+  text-align:inherit;
+}
+input,
+select,
+textarea {
+  font:inherit;
+  color:inherit;
+}
+:focus-visible {
+  outline:3px solid var(--focus);
+  outline-offset:2px;
+}
+body.lock {
+  overflow:hidden;
+}
+svg.ic {
+  width:20px;
+  height:20px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.9;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  flex:none;
+}
+svg.ic.s14 {
+  width:14px;
+  height:14px;
+}
+svg.ic.s16 {
+  width:16px;
+  height:16px;
+}
+.container {
+  max-width:1200px;
+  margin:0 auto;
+  padding-left:max(20px,env(safe-area-inset-left,0px));
+  padding-right:max(20px,env(safe-area-inset-right,0px));
+}
+.muted {
+  color:var(--text2);
+}
+.hint {
+  font-size:12.5px;
+  color:var(--text2);
+}
+.eyebrow {
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--text2);
+}
+.stars span {
+  position:absolute;
+  width:6px;
+  height:6px;
+  border-radius:50%;
+  background:var(--ivory);
+  opacity:.7;
+}

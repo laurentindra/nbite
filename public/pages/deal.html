@@ -1,0 +1,67 @@
+<div class="container">
+  <button class="crumb" data-a="back"><svg class="ic" aria-hidden="true"><use href="assets/img/icons.svg#left"/></svg>Back to deals</button>
+  <div class="dgrid">
+    <div>
+      <div class="dhero">
+        <div class="art-box" data-art role="img" aria-label="Illustration placeholder for food photo"><img alt=""></div>
+        <span class="bdg b-disc disc" data-if="discounted" data-field="discount"></span>
+      </div>
+      <div class="info"><h3><svg class="ic" aria-hidden="true"><use href="assets/img/icons.svg#bag"/></svg>What’s in it</h3><p data-field="details"></p></div>
+      <div class="info">
+        <h3><svg class="ic" aria-hidden="true"><use href="assets/img/icons.svg#store"/></svg>From the store</h3>
+        <p data-field="note"></p>
+        <p class="muted info-address" data-field="address"></p>
+      </div>
+      <div class="info"><h3><svg class="ic" aria-hidden="true"><use href="assets/img/icons.svg#alert"/></svg>Allergens &amp; ingredients</h3><p data-field="allergens"></p></div>
+      <div class="info">
+        <h3><svg class="ic" aria-hidden="true"><use href="assets/img/icons.svg#shield"/></svg>Food safety</h3>
+        <p>Surplus food is collected the same day it is made. Eat it tonight and reheat or refrigerate as the store advises. Check the pack and ask the store if you have a specific allergy.</p>
+      </div>
+    </div>
+    <aside class="buy" aria-label="Reserve this package">
+      <div class="buy-top">
+        <div class="mr buy-store"><svg class="ic s16" aria-hidden="true"><use href="assets/img/icons.svg#store"/></svg><span data-field="merchant"></span></div>
+        <button class="favb" data-a="fav" aria-pressed="false"><svg class="ic" aria-hidden="true"><use href="assets/img/icons.svg#heart"/></svg></button>
+      </div>
+      <h1 data-field="title"></h1>
+      <div class="muted buy-place"><svg class="ic s16" aria-hidden="true"><use href="assets/img/icons.svg#pin"/></svg><span data-field="place"></span></div>
+      <div class="pricerow">
+        <span class="price" data-field="price"></span>
+        <span class="was" data-if="discounted" data-field="was"></span>
+        <span class="buy-save" data-if="discounted" data-field="save"></span>
+      </div>
+      <button class="btn btn-s blk chat-btn" data-a="start-chat"><svg class="ic" aria-hidden="true"><use href="assets/img/icons.svg#message"/></svg>Chat with this store</button>
+      <div class="deadline">
+        <svg class="ic" aria-hidden="true"><use href="assets/img/icons.svg#clock"/></svg>
+        <div>
+          <div class="deadline-title">Pick up today, <span data-field="window"></span></div>
+          <div class="deadline-note">
+            <span data-if="s-active">Collect by <span data-field="end"></span>. Pickup closes in <span data-field="minsLeft"></span> min.</span>
+            <span data-if="s-sold">This package is sold out.</span>
+            <span data-if="s-expired">This pickup window has ended.</span>
+          </div>
+        </div>
+      </div>
+      <div class="qty-row">
+        <div>
+          <div class="qty-label">Quantity</div>
+          <div class="muted qty-avail"><span data-if="s-active"><span data-field="stock"></span> <span data-field="unit"></span> available</span><span data-if="s-inactive">Unavailable</span></div>
+        </div>
+        <div class="stepper">
+          <button data-a="q-" aria-label="Decrease quantity"><svg class="ic" aria-hidden="true"><use href="assets/img/icons.svg#minus"/></svg></button>
+          <b aria-live="polite" data-field="qty"></b>
+          <button data-a="q+" aria-label="Increase quantity"><svg class="ic" aria-hidden="true"><use href="assets/img/icons.svg#plus"/></svg></button>
+        </div>
+      </div>
+      <div data-if="active">
+        <div class="sumrow tot"><span>Total</span><span data-field="total"></span></div>
+        <a class="btn btn-p blk buy-reserve" href="#checkout">Reserve This Bag</a>
+        <p class="hint buy-hint">Free cancellation until 1 hour before pickup. Service fee added at checkout.</p>
+      </div>
+      <div data-if="inactive">
+        <button class="btn blk buy-unavailable" disabled><span data-if="s-sold">Sold out</span><span data-if="s-expired">Pickup window ended</span></button>
+        <a class="btn btn-s blk buy-similar" href="#explore">See similar deals</a>
+      </div>
+    </aside>
+  </div>
+</div>

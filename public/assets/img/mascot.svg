@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" aria-hidden="true">
+<style>
+  :root {
+    --moon: #F7F0DD;
+    --line: #101A35;
+    --ivory: #FBF8EE;
+  }
+</style>
+<defs>
+<g id="m-body">
+  <path fill="#F7F0DD" stroke="#101A35" stroke-width="3.2" stroke-linejoin="round" style="fill:var(--moon, #F7F0DD);stroke:var(--line, #101A35)" d="M77 13.2C70 10.6 64 10 58 10.3 31 11.6 9.6 33 10.2 60.4 10.8 87 33.4 111 61.5 110 88 109 110.4 86 110 59.8c0-6.2-1.2-11-3-16.9Q93 42 92 28 78 27 77 13.2Z"/>
+  <circle cx="31" cy="44" r="4.4" fill="#101A35" style="fill:var(--line, #101A35)" opacity=".13"/>
+  <circle cx="83" cy="88" r="5.4" fill="#101A35" style="fill:var(--line, #101A35)" opacity=".13"/>
+  <circle cx="35" cy="88" r="3" fill="#101A35" style="fill:var(--line, #101A35)" opacity=".13"/>
+</g>
+<g id="f-calm" fill="none" stroke="#101A35" stroke-width="3.4" stroke-linecap="round" style="stroke:var(--line, #101A35)">
+  <path d="M38 61Q44 67 50 61"/>
+  <path d="M70 61Q76 67 82 61"/>
+  <path d="M53 74Q60 80 67 74"/>
+</g>
+<g id="f-cele" fill="none" stroke="#101A35" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" style="stroke:var(--line, #101A35)">
+  <path d="M37 63Q44 54 51 63"/>
+  <path d="M69 63Q76 54 83 63"/>
+  <path d="M51 72Q60 86 69 72Z" fill="#101A35" style="fill:var(--line, #101A35)"/>
+</g>
+<g id="f-sleep" fill="none" stroke="#101A35" stroke-width="3.4" stroke-linecap="round" style="stroke:var(--line, #101A35)">
+  <path d="M38 63H50"/>
+  <path d="M70 63H82"/>
+  <path d="M55 76Q60 78 65 76"/>
+</g>
+<g id="f-oops" fill="none" stroke="#101A35" stroke-width="3.4" stroke-linecap="round" style="stroke:var(--line, #101A35)">
+  <circle cx="44" cy="62" r="2.2" fill="#101A35" style="fill:var(--line, #101A35)"/>
+  <circle cx="76" cy="62" r="2.2" fill="#101A35" style="fill:var(--line, #101A35)"/>
+  <path d="M52 78Q56 74 60 77T68 77"/>
+</g>
+<g id="m-mono" fill="none" stroke="currentColor" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M77 13.2C70 10.6 64 10 58 10.3 31 11.6 9.6 33 10.2 60.4 10.8 87 33.4 111 61.5 110 88 109 110.4 86 110 59.8c0-6.2-1.2-11-3-16.9Q93 42 92 28 78 27 77 13.2Z"/>
+  <path d="M38 61Q44 67 50 61M70 61Q76 67 82 61M53 74Q60 80 67 74"/>
+</g>
+<g id="spark" fill="#FBF8EE" style="fill:var(--ivory, #FBF8EE)">
+  <path d="M0-9 2.4-2.4 9 0 2.4 2.4 0 9-2.4 2.4-9 0-2.4-2.4Z"/>
+</g>
+</defs>
+</svg>

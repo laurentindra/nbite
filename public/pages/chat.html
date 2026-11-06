@@ -1,0 +1,15 @@
+<div class="container" data-if="loading">
+  <div class="panel">Loading conversation… <a class="linkb" href="#messages">Back to messages</a></div>
+</div>
+<div class="container chat-page" data-if="ready">
+  <a class="crumb" href="#messages"><svg class="ic" aria-hidden="true"><use href="assets/img/icons.svg#left"/></svg>All messages</a>
+  <div class="chat-heading">
+    <div class="chat-store-icon"><svg class="ic" aria-hidden="true"><use href="assets/img/icons.svg#store"/></svg></div>
+    <div><h1 data-field="merchant"></h1><p class="muted" data-field="meta"></p></div>
+  </div>
+  <div data-slot="thread"></div>
+  <form class="chat-compose" data-form="customer-message">
+    <textarea name="message" rows="2" maxlength="1000" placeholder="Write a message to the store…" required></textarea>
+    <button class="btn btn-p" type="submit">Send <svg class="ic" aria-hidden="true"><use href="assets/img/icons.svg#message"/></svg></button>
+  </form>
+</div>

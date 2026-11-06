@@ -1,0 +1,68 @@
+/* modal, drawer */
+.scrim {
+  position:fixed;
+  inset:0;
+  background:rgba(16,26,53,.58);
+  z-index:70;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+}
+.modal {
+  background:var(--cream);
+  border-radius:24px;
+  max-width:460px;
+  width:100%;
+  padding:26px;
+  max-height:90vh;
+  overflow:auto;
+}
+.modal h3 {
+  font-size:20px;
+  font-weight:800;
+  color:var(--navy);
+  margin-bottom:12px;
+}
+.scrim.dr {
+  justify-content:flex-end;
+  align-items:stretch;
+  padding:0;
+}
+.drawer {
+  background:var(--cream);
+  width:min(400px,100%);
+  padding:20px 20px calc(20px + env(safe-area-inset-bottom,0px));
+  overflow:auto;
+  display:flex;
+  flex-direction:column;
+}
+.drawer .fpanel {
+  position:static;
+  border:0;
+  padding:0;
+  background:none;
+  flex:1;
+}
+.toast {
+  position:fixed;
+  left:50%;
+  translate:-50% 0;
+  bottom:calc(88px + env(safe-area-inset-bottom,0px));
+  background:var(--navy);
+  color:var(--ivory);
+  padding:12px 18px;
+  border-radius:14px;
+  font-weight:600;
+  z-index:90;
+  display:flex;
+  gap:10px;
+  align-items:center;
+  max-width:calc(100vw - 32px);
+  box-shadow:0 16px 40px -12px rgba(0,0,0,.5);
+}
+@media(min-width:861px) {
+  .toast {
+    bottom:28px;
+  }
+}

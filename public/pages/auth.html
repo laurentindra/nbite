@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="authbox">
+    <div class="auth-head">
+      <svg width="84" height="84" viewBox="0 0 120 120" role="img" aria-label="Night Bite moon mascot"><use href="assets/img/mascot.svg#m-body"/><use href="assets/img/mascot.svg#f-calm"/></svg>
+      <h1 data-if="register">Create your account</h1>
+      <h1 data-if="login">Welcome back</h1>
+      <p class="muted" data-if="register">Reserve surplus food from local spots and keep track of your pickups.</p>
+      <p class="muted" data-if="login">Log in to reserve bags and see your orders.</p>
+    </div>
+    <form data-form class="authform" novalidate>
+      <div class="alertbox" role="alert" data-if="error"><svg class="ic" aria-hidden="true"><use href="assets/img/icons.svg#alert"/></svg><span data-field="error"></span></div>
+      <div class="fld" data-if="register">
+        <label for="au-name">Full name</label>
+        <input class="inp" id="au-name" name="name" type="text" autocomplete="name" maxlength="60">
+        <div class="ferr" id="au-name-e"><svg class="ic" aria-hidden="true"><use href="assets/img/icons.svg#alert"/></svg><span data-field="nameError"></span></div>
+      </div>
+      <div class="fld">
+        <label for="au-email">Email</label>
+        <input class="inp" id="au-email" name="email" type="email" autocomplete="email" inputmode="email" maxlength="254">
+        <div class="ferr" id="au-email-e"><svg class="ic" aria-hidden="true"><use href="assets/img/icons.svg#alert"/></svg><span data-field="emailError"></span></div>
+      </div>
+      <div class="fld">
+        <label for="au-password">Password</label>
+        <div class="pwrap">
+          <input class="inp" id="au-password" name="password" type="password" maxlength="128">
+          <button type="button" class="pwt" data-a="togpw" aria-label="Show password"><svg class="ic" aria-hidden="true"><use href="assets/img/icons.svg#eye"/></svg></button>
+        </div>
+        <div class="hint" data-if="register">At least 8 characters.</div>
+        <div class="ferr" id="au-password-e"><svg class="ic" aria-hidden="true"><use href="assets/img/icons.svg#alert"/></svg><span data-field="passwordError"></span></div>
+      </div>
+      <button class="btn btn-p blk" type="submit">
+        <span class="spin" data-if="busy"></span>
+        <span data-if="login-idle">Log in</span>
+        <span data-if="login-busy">Logging in</span>
+        <span data-if="register-idle">Create account</span>
+        <span data-if="register-busy">Creating account</span>
+      </button>
+    </form>
+    <p class="muted auth-switch" data-if="login">New to Night Bite? <a class="linkb" href="#register">Create an account</a></p>
+    <p class="muted auth-switch" data-if="register">Already have an account? <a class="linkb" href="#login">Log in</a></p>
+  </div>
+</div>

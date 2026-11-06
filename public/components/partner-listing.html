@@ -1,0 +1,19 @@
+<article class="panel partner-item">
+  <div class="partner-item-top">
+    <div class="partner-thumb"><div class="art-box" data-art role="img" aria-label="Illustration placeholder for food photo"><img alt="Food package photo"></div></div>
+    <div class="partner-item-info">
+      <div class="eyebrow" data-field="meta"></div>
+      <h3 data-field="title"></h3>
+      <div class="muted" data-field="pickup"></div>
+      <div class="partner-customer-price">Customer price: <b data-field="price"></b> <span class="bdg b-disc" data-variant="promo" data-field="promo"></span><span class="bdg b-lav" data-variant="regular">Regular price</span></div>
+    </div>
+  </div>
+  <form class="partner-price-form" data-form="partner-price">
+    <label class="fld">Regular price (Rp)<input class="inp" type="number" name="originalPrice" min="100" step="100" required></label>
+    <label class="fld">Promo price (Rp)<input class="inp" type="number" name="price" min="100" step="100"></label>
+    <label class="fld">Total daily quantity<input class="inp" type="number" name="quantity" min="0" max="500" required></label>
+    <label class="promo-toggle"><input type="checkbox" name="discounted"> Enable promo price</label>
+    <div class="hint">When promo is off, customers see the regular price.</div>
+    <button class="btn btn-p" type="submit">Save package update</button>
+  </form>
+</article>

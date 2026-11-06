@@ -1,0 +1,121 @@
+/* buttons, badges */
+.btn {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  height:50px;
+  padding:0 22px;
+  border-radius:14px;
+  font-weight:700;
+  font-size:15px;
+  transition:background .15s,transform .1s;
+  white-space:nowrap;
+  text-align:center;
+}
+.btn-p {
+  background:var(--navy);
+  color:var(--ivory);
+}
+.btn-p:hover {
+  background:var(--twi);
+}
+.btn-p:active {
+  transform:scale(.98);
+}
+.btn-s {
+  background:var(--white);
+  color:var(--navy);
+  box-shadow:inset 0 0 0 1.5px var(--navy);
+}
+.btn-s:hover {
+  background:#F1EFE8;
+}
+.btn-pe {
+  background:var(--peach);
+  color:var(--navy);
+}
+.btn-pe:hover {
+  background:#EDB482;
+}
+.btn-d {
+  background:var(--err-bg);
+  color:var(--err-ink);
+}
+.btn-g {
+  color:var(--navy);
+  padding:0 14px;
+}
+.btn-g:hover {
+  background:rgba(16,26,53,.06);
+}
+.btn[disabled] {
+  background:#E4E2DB;
+  color:#6F7280;
+  box-shadow:none;
+  cursor:not-allowed;
+  transform:none;
+}
+.btn.sm {
+  height:38px;
+  padding:0 14px;
+  font-size:13.5px;
+  border-radius:11px;
+}
+.btn.blk {
+  width:100%;
+}
+.spin {
+  width:18px;
+  height:18px;
+  border:2.5px solid currentColor;
+  border-right-color:transparent;
+  border-radius:50%;
+  animation:sp .8s linear infinite;
+}
+@keyframes sp {
+  to{rotate:360deg};
+}
+@media(prefers-reduced-motion:reduce) {
+  * {
+    animation-duration:2.4s!important;
+    transition:none!important;
+    scroll-behavior:auto!important;
+  }
+}
+.bdg {
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+  height:26px;
+  padding:0 10px;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:700;
+  white-space:nowrap;
+}
+.bdg svg.ic {
+  width:14px;
+  height:14px;
+  stroke-width:2.4;
+}
+.b-disc {
+  background:var(--peach);
+  color:var(--navy);
+}
+.b-ok {
+  background:var(--ok-bg);
+  color:var(--ok-ink);
+}
+.b-warn {
+  background:var(--warn-bg);
+  color:var(--warn-ink);
+}
+.b-err {
+  background:var(--err-bg);
+  color:var(--err-ink);
+}
+.b-lav {
+  background:var(--lav-bg);
+  color:var(--navy);
+}

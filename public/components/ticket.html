@@ -1,0 +1,20 @@
+<div class="ticket">
+  <div class="ticket-head">
+    <div class="ticket-ref">
+      <div class="muted ticket-label">Order reference</div>
+      <div class="ticket-ref-value" data-field="ref"></div>
+    </div>
+    <span data-slot="status"></span>
+  </div>
+  <div class="ticket-qr" data-if="qr">
+    <div class="qr-box"><svg viewBox="0 0 21 21" width="160" height="160" fill="#101A35" shape-rendering="crispEdges" role="img" aria-label="QR code placeholder" data-list="qr"></svg></div>
+    <div class="qr-text">
+      <div class="muted qr-caption">Pickup code · QR is a demo placeholder</div>
+      <div class="qr-code" data-field="code"></div>
+    </div>
+  </div>
+  <div class="ticket-details">
+    <div class="ticket-row"><svg class="ic" aria-hidden="true"><use href="assets/img/icons.svg#store"/></svg><div><b data-field="merchant"></b><br><span class="muted" data-field="address"></span></div></div>
+    <div class="ticket-row"><svg class="ic" aria-hidden="true"><use href="assets/img/icons.svg#clock"/></svg><div><b data-field="when"></b><br><span class="muted" data-field="summary"></span></div></div>
+  </div>
+</div>

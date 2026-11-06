@@ -1,0 +1,16 @@
+<div class="container">
+  <button class="crumb" data-a="back"><svg class="ic" aria-hidden="true"><use href="assets/img/icons.svg#left"/></svg>Back to orders</button>
+  <div class="narrow">
+    <h1 class="order-title">Pickup details</h1>
+    <div data-slot="ticket"></div>
+    <div class="info"><h3><svg class="ic" aria-hidden="true"><use href="assets/img/icons.svg#info"/></svg>How to collect</h3><p>
+        <span data-if="h-upcoming">Show this code at the counter during your pickup window. The store will check it and hand over your package.</span>
+        <span data-if="h-completed">This order was collected. Thanks for rescuing a bite.</span>
+        <span data-if="h-missed">The pickup window ended before this order was collected.</span>
+        <span data-if="h-cancelled">This order was cancelled and nothing was charged.</span>
+      </p></div>
+    <button class="btn btn-s blk order-cancel" data-a="modal" data-k="cancel" data-if="cancellable">Cancel order</button>
+    <div class="hint order-hint order-hint-tight" data-if="cancellable">Free cancellation until 1 hour before pickup starts.</div>
+    <div class="hint order-hint order-hint-loose" data-if="locked" data-field="cancelNote"></div>
+  </div>
+</div>

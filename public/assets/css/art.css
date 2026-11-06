@@ -1,0 +1,42 @@
+/* art */
+.art-box {
+  position:relative;
+  overflow:hidden;
+  width:100%;
+  height:100%;
+}
+.art-box>svg {
+  display:block;
+  width:100%;
+  height:100%;
+}
+.art-box>img {
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.art-bakery {
+  background:#E6C79A;
+}
+.art-bundle {
+  background:#E9D2B4;
+}
+.art-meal {
+  background:#EBD9B8;
+}
+.art-snack {
+  background:#E3C08D;
+}
+.art-cafe {
+  background:#DCCBB3;
+}
+.art-noodle {
+  background:#E8D3A8;
+}
+.art-sate {
+  background:#D9B58B;
+}
+.art-loaf {
+  background:#E5CDA6;
+}
