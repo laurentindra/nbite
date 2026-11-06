@@ -1,8 +1,6 @@
 -- Night Bite MySQL schema
 -- Compatible with MySQL 8+ and modern XAMPP MariaDB versions.
 -- Import this file in phpMyAdmin. The app will add sample restaurants/packages on first start.
-CREATE DATABASE IF NOT EXISTS nightbite CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE nightbite;
 
 CREATE TABLE IF NOT EXISTS meta (
     key_name VARCHAR(100) NOT NULL PRIMARY KEY,
